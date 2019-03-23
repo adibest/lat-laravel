@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layout2.app');
 });
 
 Route::get('/pangkat2/{angka}', 'PegawaiController@index');
@@ -34,3 +34,11 @@ Route::get('/category' , function () {
 
 Route::get('/kamar/{fulan}', 'LuasKamarController@LuasKamar');
 Route::post('/hasil', 'LuasKamarController@hasil');
+
+Route::get('/article2/{judul}/{article}' , function () {
+	return view('article2.index');
+})->name('artikel');
+
+Route::get('/category2' , function () {
+	return view('category2.index');
+});
