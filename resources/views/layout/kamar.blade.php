@@ -11,8 +11,6 @@
   <style>
   #kmr {
     border: 2px solid #000;
-    height:($lebar)px;
-    width: ($panjang)px;
   }
   </style>
 </head>

@@ -4,22 +4,24 @@
 
 @section('content')
 
-<h3>Aplikasi penghitung luas kamar mas {{ $fulan }}</h3>
+<h3 class="mx-auto text-center">Aplikasi penghitung luas kamar {{ $fulan }}</h3>
 
-	<form method="get" action="{{ url('/hasil') }}">
+<br>
+
+	<form method="get" action="{{ url('/hasil') }}" class="mx-auto text-center">
 		@csrf
 
 		<label>Panjang Kamar(cm)</label><br>
 		<input type="number" name="panjang">
 
-		<br>
+		<br><br>
 
 		<label>Lebar Kamar(cm)</label><br>
 		<input type="number" name="lebar">
 
-		<br>
+		<br><br>
 
-		<button type="submit">Kirim</button>
+		<button type="submit" class="btn btn-dark">Kirim</button>
 	</form>
-
+<br>
 @endsection
