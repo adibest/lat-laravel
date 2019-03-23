@@ -8,7 +8,7 @@
 
 <br>
 
-	<form method="get" action="{{ url('/hasil') }}" class="mx-auto text-center">
+	<form method="post" action="{{ url('/hasil') }}" class="mx-auto text-center">
 		@csrf
 
 		<label>Panjang Kamar(cm)</label><br>

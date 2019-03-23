@@ -33,4 +33,4 @@ Route::get('/category' , function () {
 });
 
 Route::get('/kamar/{fulan}', 'LuasKamarController@LuasKamar');
-Route::get('/hasil', 'LuasKamarController@hasil');
+Route::post('/hasil', 'LuasKamarController@hasil');
